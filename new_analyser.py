@@ -16,4 +16,4 @@ exp_variant = options[1]
 exp_size    = options[2]
 
 log_names = [i for i in os.listdir(target_directory) if ".csv" in i]
-print("git test")
+print("git test v3")
