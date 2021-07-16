@@ -22,7 +22,6 @@ class Analyser:
     def getData(self):
         self.data = pd.read_csv(self.log_names[0], error_bad_lines=False)
         for i in range(1, len(self.log_names)):
-            print("\n")
             self.data_next = pd.read_csv(self.log_names[i], error_bad_lines=False)
             self.data_frames = [self.data, self.data_next]
             self.data = pd.concat(self.data_frames, ignore_index=True)
